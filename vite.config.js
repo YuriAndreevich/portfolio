@@ -2,20 +2,20 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  server: {
-    watch: {
-      usePolling: true
-    },
-    port: 3000,
-    host: 'localhost'
-  },
+  // server: {
+  //   watch: {
+  //     usePolling: true
+  //   },
+  //   port: 3000,
+  //   host: 'localhost'
+  // },
   plugins: [react({
     exclude: /\.stories\.(t|j)sx?$/,
     include: '**/*.tsx',
   }),
   ],
 
-  base: '/',
+  base: '/portfolio',
   resolve: {
     alias: {
       components: '/src/components',
